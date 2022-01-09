@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { TesteSinalPipe } from './shared/pipe/teste-sinal.pipe';
+import { TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,11 @@ import { TesteSinalPipe } from './shared/pipe/teste-sinal.pipe';
 })
 export class AppComponent {
   title = 'Pipes';
-  texto: string = "EXEmplo";
-  numero: number = 1000000;
+
+  constructor(public translateService:TranslateService){
+  }
+
+  changeLanguage(lang: string): void {
+    this.translateService.use(lang);
+  }
 }

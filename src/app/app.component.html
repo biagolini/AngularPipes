@@ -1,2 +1,9 @@
-<p>{{ 1 | testeSinal }}</p>
-<p>{{ -1 | testeSinal }}</p>
+<div>
+  <h1>{{ "home.title" | translate }}</h1>
+
+  <p>{{ "home.wellcome" | translate }}</p>
+</div>
+
+<h2>{{ "home.select" | translate }}</h2>
+<button (click)="changeLanguage('en')">EN</button>
+<button (click)="changeLanguage('pt')">PT</button>
