@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TesteSinalPipe } from './shared/pipe/teste-sinal.pipe';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
